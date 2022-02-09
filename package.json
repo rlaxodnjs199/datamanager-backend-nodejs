@@ -1,10 +1,27 @@
 {
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+  "name": "datamanager-backend-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlaxodnjs199/datamanager-backend-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rlaxodnjs199/datamanager-backend-nodejs/issues"
+  },
+  "homepage": "https://github.com/rlaxodnjs199/datamanager-backend-nodejs#readme",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "googleapis": "^95.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
