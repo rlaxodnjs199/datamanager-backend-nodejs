@@ -1,8 +1,10 @@
-const express = require("express");
-
+express = require("express");
+const cors = require("cors");
 const { google } = require("googleapis");
 
 const app = express();
+
+app.use(cors());
 
 app.get("/", async (req, res) => {
   const auth = new google.auth.GoogleAuth({
@@ -26,7 +28,7 @@ app.get("/", async (req, res) => {
     range: "Sheet1",
   });
 
-  res.send(getRows.data);
+  res.send(getRows.data.values);
 });
 
 app.listen(1337, (req, res) => console.log("running on 1337"));
